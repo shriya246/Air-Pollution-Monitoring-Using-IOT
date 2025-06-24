@@ -5,21 +5,24 @@
 ```bash
 git clone https://github.com/your-username/air-pollution-monitoring.git
 cd air-pollution-monitoring
+```
 
-2. Install Dependencies
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
 
-3. Setup AWS IoT Certificates
+### 3. Setup AWS IoT Certificates
 Ensure you have the following certificate files from AWS IoT:
 Amazon-root-CA-1.pem
 device.cert.pem
 private.pem.key
 Place them in the same directory as air_monitoring.py.
 
-4. Run the Monitoring Script
+### 4. Run the Monitoring Script
 ```bash
 python air_monitoring.py
+```
 
 You can control the sensor monitoring by publishing the following MQTT commands to the gasmonitor/data topic:
 "start reading" to begin monitoring
